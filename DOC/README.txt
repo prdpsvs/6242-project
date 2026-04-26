@@ -120,8 +120,6 @@ DASHBOARD FEATURES
 
 DEMO VIDEO
 ----------
-https://youtu.be/hMS5FSxjFIg - [Venkata Satya Pradeep Srikakolapu]
-
 
 FILE STRUCTURE
 --------------

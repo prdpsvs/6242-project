@@ -1,0 +1,355 @@
+{
+  "meta": {
+    "disclaimer": "Synthetic FAERS-shaped fixture for development. Schema mirrors openFDA /drug/event.json.",
+    "results": {"skip": 0, "limit": 200, "total": 200}
+  },
+  "results": [
+    {
+      "safetyreportid": "DEV-0001",
+      "receivedate": "20240115",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "67",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "WARFARIN", "drugcharacterization": "1"},
+          {"medicinalproduct": "ASPIRIN", "drugcharacterization": "2"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Hemorrhage", "reactionoutcome": "5"},
+          {"reactionmeddrapt": "Anaemia", "reactionoutcome": "6"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0002",
+      "receivedate": "20240120",
+      "serious": "1",
+      "seriousnessdeath": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "82",
+        "patientsex": "1",
+        "drug": [
+          {"medicinalproduct": "WARFARIN", "drugcharacterization": "1"},
+          {"medicinalproduct": "AMIODARONE", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Intracranial haemorrhage", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0003",
+      "receivedate": "20240122",
+      "serious": "0",
+      "occurcountry": "DE",
+      "patient": {
+        "patientonsetage": "45",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "METFORMIN", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Nausea", "reactionoutcome": "6"},
+          {"reactionmeddrapt": "Diarrhoea", "reactionoutcome": "6"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0004",
+      "receivedate": "20240201",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "58",
+        "patientsex": "1",
+        "drug": [
+          {"medicinalproduct": "ATORVASTATIN", "drugcharacterization": "1"},
+          {"medicinalproduct": "CLARITHROMYCIN", "drugcharacterization": "3"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Rhabdomyolysis", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0005",
+      "receivedate": "20240210",
+      "serious": "0",
+      "occurcountry": "GB",
+      "patient": {
+        "patientonsetage": "33",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "IBUPROFEN", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Headache", "reactionoutcome": "6"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0006",
+      "receivedate": "20240215",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "71",
+        "patientsex": "1",
+        "drug": [
+          {"medicinalproduct": "LISINOPRIL", "drugcharacterization": "1"},
+          {"medicinalproduct": "SPIRONOLACTONE", "drugcharacterization": "2"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Hyperkalaemia", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0007",
+      "receivedate": "20240220",
+      "serious": "1",
+      "seriousnessdeath": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "78",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "DIGOXIN", "drugcharacterization": "1"},
+          {"medicinalproduct": "FUROSEMIDE", "drugcharacterization": "2"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Cardiac arrest", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0008",
+      "receivedate": "20240301",
+      "serious": "0",
+      "occurcountry": "CA",
+      "patient": {
+        "patientonsetage": "29",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "SERTRALINE", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Insomnia", "reactionoutcome": "6"},
+          {"reactionmeddrapt": "Nausea", "reactionoutcome": "6"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0009",
+      "receivedate": "20240305",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "62",
+        "patientsex": "1",
+        "drug": [
+          {"medicinalproduct": "WARFARIN", "drugcharacterization": "1"},
+          {"medicinalproduct": "FLUCONAZOLE", "drugcharacterization": "3"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Hemorrhage", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0010",
+      "receivedate": "20240312",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "55",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "METHOTREXATE", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Pancytopenia", "reactionoutcome": "5"},
+          {"reactionmeddrapt": "Hepatic failure", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0011",
+      "receivedate": "20240320",
+      "serious": "0",
+      "occurcountry": "FR",
+      "patient": {
+        "patientonsetage": "41",
+        "patientsex": "1",
+        "drug": [
+          {"medicinalproduct": "OMEPRAZOLE", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Headache", "reactionoutcome": "6"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0012",
+      "receivedate": "20240401",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "69",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "ATORVASTATIN", "drugcharacterization": "1"},
+          {"medicinalproduct": "GEMFIBROZIL", "drugcharacterization": "3"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Rhabdomyolysis", "reactionoutcome": "5"},
+          {"reactionmeddrapt": "Acute kidney injury", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0013",
+      "receivedate": "20240410",
+      "serious": "0",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "37",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "METFORMIN", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Diarrhoea", "reactionoutcome": "6"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0014",
+      "receivedate": "20240415",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "74",
+        "patientsex": "1",
+        "drug": [
+          {"medicinalproduct": "WARFARIN", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Hemorrhage", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0015",
+      "receivedate": "20240420",
+      "serious": "0",
+      "occurcountry": "JP",
+      "patient": {
+        "patientonsetage": "52",
+        "patientsex": "1",
+        "drug": [
+          {"medicinalproduct": "ASPIRIN", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Dyspepsia", "reactionoutcome": "6"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0016",
+      "receivedate": "20240501",
+      "serious": "1",
+      "seriousnessdeath": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "88",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "DIGOXIN", "drugcharacterization": "1"},
+          {"medicinalproduct": "AMIODARONE", "drugcharacterization": "3"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Cardiac arrest", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0017",
+      "receivedate": "20240510",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "60",
+        "patientsex": "1",
+        "drug": [
+          {"medicinalproduct": "LISINOPRIL", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Angioedema", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0018",
+      "receivedate": "20240515",
+      "serious": "0",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "44",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "SERTRALINE", "drugcharacterization": "1"},
+          {"medicinalproduct": "TRAMADOL", "drugcharacterization": "3"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Serotonin syndrome", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0019",
+      "receivedate": "20240601",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "51",
+        "patientsex": "2",
+        "drug": [
+          {"medicinalproduct": "METHOTREXATE", "drugcharacterization": "1"},
+          {"medicinalproduct": "TRIMETHOPRIM", "drugcharacterization": "3"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Pancytopenia", "reactionoutcome": "5"}
+        ]
+      }
+    },
+    {
+      "safetyreportid": "DEV-0020",
+      "receivedate": "20240610",
+      "serious": "0",
+      "occurcountry": "US",
+      "patient": {
+        "patientonsetage": "39",
+        "patientsex": "1",
+        "drug": [
+          {"medicinalproduct": "IBUPROFEN", "drugcharacterization": "1"}
+        ],
+        "reaction": [
+          {"reactionmeddrapt": "Dyspepsia", "reactionoutcome": "6"}
+        ]
+      }
+    }
+  ]
+}
