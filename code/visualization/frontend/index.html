@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drug Adverse Event Dashboard — Team 217</title>
+  <link rel="stylesheet" href="/static/styles.css"/>
+</head>
+<body>
+  <header>
+    <div id="header-left">
+      <h1>Drug Adverse Event Network</h1>
+      <p id="header-sub">Each node is a <span class="pill drug-pill">drug</span> or <span class="pill ae-pill">adverse event</span>. Edges show co-occurrence — <span class="pill prr-pill">red edges</span> are statistically significant signals (PRR ≥ 2).</p>
+    </div>
+    <span id="status-badge" class="badge loading">Loading…</span>
+  </header>
+
+  <div id="controls">
+    <div class="control-group">
+      <label>Search drug</label>
+      <input id="drug-search" type="text" placeholder="e.g. warfarin" />
+      <button id="btn-search">Search</button>
+      <button id="btn-reset">Reset</button>
+    </div>
+    <div class="control-group">
+      <label>Min connections</label>
+      <input id="min-degree" type="number" value="1" min="1" max="50" style="width:60px"/>
+    </div>
+    <div class="control-group">
+      <label>Show only</label>
+      <select id="node-kind">
+        <option value="">All nodes</option>
+        <option value="drug">Drugs only</option>
+        <option value="ae">Adverse events only</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label>Drug cluster</label>
+      <select id="community-filter"><option value="">All clusters</option></select>
+    </div>
+    <div class="control-group legend-group">
+      <span class="legend-item"><svg width="12" height="12"><circle cx="6" cy="6" r="6" fill="#3b82f6"/></svg> Drug node</span>
+      <span class="legend-item"><svg width="12" height="12"><circle cx="6" cy="6" r="6" fill="#f97316"/></svg> Adverse event</span>
+      <span class="legend-item"><svg width="30" height="4"><line x1="0" y1="2" x2="30" y2="2" stroke="#ef4444" stroke-width="2.5"/></svg> High PRR signal</span>
+      <span class="legend-item"><svg width="30" height="4"><line x1="0" y1="2" x2="30" y2="2" stroke="#334155" stroke-width="1.5"/></svg> Co-occurrence</span>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="graph-panel">
+      <svg id="graph-svg"></svg>
+      <div id="tooltip" class="tooltip hidden"></div>
+      <div id="graph-hint">Click a drug node to highlight its adverse events &nbsp;·&nbsp; Scroll to zoom &nbsp;·&nbsp; Drag to pan</div>
+    </div>
+
+    <div id="side-panel">
+      <section id="stats-section">
+        <h2>Dataset summary</h2>
+        <div id="stats-content">—</div>
+      </section>
+
+      <section id="signals-section">
+        <h2>Top safety signals <span class="section-hint">(by PRR)</span></h2>
+        <p class="section-desc">Proportional Reporting Ratio ≥ 2 means the drug-event pair is reported more than expected by chance. Higher = stronger signal.</p>
+        <div id="signals-content">—</div>
+      </section>
+
+      <section id="predict-section">
+        <h2>Patient risk predictor</h2>
+        <p class="section-desc">Enter a patient's profile to estimate risk of serious outcome.</p>
+        <div class="form-row">
+          <label>Drugs (comma-separated)</label>
+          <input id="pred-drugs" type="text" placeholder="warfarin, aspirin"/>
+        </div>
+        <div class="form-row">
+          <label>Age</label>
+          <input id="pred-age" type="number" placeholder="65"/>
+        </div>
+        <div class="form-row">
+          <label>Sex</label>
+          <select id="pred-sex">
+            <option value="">Unknown</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
+        </div>
+        <button id="btn-predict">Predict risk</button>
+        <div id="pred-result" class="pred-result hidden"></div>
+      </section>
+
+      <section id="validation-section">
+        <h2>Signal validation <span class="section-hint">(vs FDA ground truth)</span></h2>
+        <p class="section-desc">Known FDA drug-alert pairs — did our algorithm detect them?</p>
+        <div id="val-content">—</div>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="/static/network.js"></script>
+  <script src="/static/filters.js"></script>
+</body>
+</html>
